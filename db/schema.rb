@@ -16,9 +16,6 @@ ActiveRecord::Schema.define(version: 2021_02_19_064732) do
     t.string "name"
     t.text "address"
     t.string "phone"
-    t.integer "sex"
-    t.string "mail_address"
-    t.boolean "email_permission"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
