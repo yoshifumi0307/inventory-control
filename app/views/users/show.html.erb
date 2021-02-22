@@ -32,24 +32,6 @@
       <%= @user.phone %>
     </div>
   </p>
-  <p>
-    <strong>性別：</strong>
-    <div class="text-sm-left">
-      <% if @user.sex == 0 then %>男<% else %>女<% end %>
-    </div>
-  </p>
-  <p>
-    <strong>メールアドレス：</strong>
-    <div class="text-sm-left">
-      <%= @user.mail_address %>
-    </div>
-  </p>
-  <p>
-    <strong>メール受信：</strong>
-    <div class="text-sm-left">
-      <% if @user.email_permission then %>許可<% else %>許可しない<% end %>
-    </div>
-  </p>
 </div>
 <div class="card-footer">
   <%= link_to '　戻る　', users_path, class:"btn btn-secondary" %>

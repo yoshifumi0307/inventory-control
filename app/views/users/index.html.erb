@@ -5,12 +5,12 @@
   <div class="container-fluid">
     <div class="row mb-2">
       <div class="col-sm-6">
-        <h1>ユーザー情報一覧</h1>
+        <h1>取扱企業一覧</h1>
       </div>
       <div class="col-sm-6">
         <ol class="breadcrumb float-sm-right">
           <li class="breadcrumb-item"><%= link_to 'ホーム' %></li>
-          <li class="breadcrumb-item active">ユーザー情報一覧</li>
+          <li class="breadcrumb-item active">取扱企業一覧</li>
         </ol>
       </div>
     </div>
@@ -27,12 +27,9 @@
             <table id="users_example" class="table table-bordered table-hover">
               <thead>
                 <tr>
-                  <th style="width:15%;">名前</th>
+                  <th style="width:30%;">取扱企業名</th>
                   <th>住所</th>
                   <th style="width:10%;">電話番号</th>
-                  <th style="width:9%;">性別</th>
-                  <th style="width:15%;">メール</th>
-                  <th style="width:14%;">メール受信</th>
                   <th style="width:20%;"></th>
                 </tr>
               </thead>
@@ -43,9 +40,6 @@
                     <td><%= user.name %></td>
                     <td><%= user.address %></td>
                     <td><%= user.phone %></td>
-                    <td><% if user.sex == 0 then %>男<% else %>女<% end %></td>
-                    <td><%= user.mail_address %></td>
-                    <td><% if user.email_permission then %>許可<% else %>許可しない<% end %></td></td>
                     <td><%= link_to '詳細', user, class:"btn btn-outline-primary btn-sm" %>
                     <%= link_to '編集', edit_user_path(user), class:"btn btn-outline-primary btn-sm" %>
                     <%= link_to '削除', user, method: :delete, class:"btn btn-outline-danger btn-sm", data: { confirm: '本当によろしいでしょうか？' } %></td>
