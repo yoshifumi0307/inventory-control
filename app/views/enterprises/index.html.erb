@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-<%= javascript_pack_tag 'users/index' %>
+<%= javascript_pack_tag 'enterprises/index' %>
 <!-- 上部 -->
 <section class="content-header">
   <div class="container-fluid">
@@ -24,7 +24,7 @@
         <div class="card">
           <!-- /.card-header -->
           <div class="card-body">
-            <table id="users_example" class="table table-bordered table-hover">
+            <table id="enterprises_example" class="table table-bordered table-hover">
               <thead>
                 <tr>
                   <th style="width:30%;">取扱企業名</th>
@@ -35,14 +35,14 @@
               </thead>
 
               <tbody>
-                <% @users.each do |user| %>
+                <% @enterprises.each do |enterprise| %>
                   <tr>
-                    <td><%= user.name %></td>
-                    <td><%= user.address %></td>
-                    <td><%= user.phone %></td>
-                    <td><%= link_to '詳細', user, class:"btn btn-outline-primary btn-sm" %>
-                    <%= link_to '編集', edit_user_path(user), class:"btn btn-outline-primary btn-sm" %>
-                    <%= link_to '削除', user, method: :delete, class:"btn btn-outline-danger btn-sm", data: { confirm: '本当によろしいでしょうか？' } %></td>
+                    <td><%= enterprise.name %></td>
+                    <td><%= enterprise.address %></td>
+                    <td><%= enterprise.phone %></td>
+                    <td><%= link_to '詳細', enterprise, class:"btn btn-outline-primary btn-sm" %>
+                    <%= link_to '編集', edit_enterprise_path(enterprise), class:"btn btn-outline-primary btn-sm" %>
+                    <%= link_to '削除', enterprise, method: :delete, class:"btn btn-outline-danger btn-sm", data: { confirm: '本当によろしいでしょうか？' } %></td>
                   </tr>
                 <% end %>
               </tbody>
