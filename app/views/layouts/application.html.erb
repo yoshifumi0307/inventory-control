@@ -30,7 +30,7 @@
       <!-- サイドバー -->
       <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- サイトロゴ -->
-        <%= link_to "/users", class:"brand-link" do %>
+        <%= link_to "/enterprises", class:"brand-link" do %>
           <span class="brand-text font-weight-light">管理画面</span>
         <% end %>
         <!-- Sidebar -->
@@ -48,13 +48,13 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <%= link_to "/users", class:"nav-link" do %>
+                    <%= link_to "/enterprises", class:"nav-link" do %>
                       <i class="far fa-circle nav-icon"></i>
                       <p>取扱企業一覧</p>
                     <% end %>
                   </li>
                   <li class="nav-item">
-                    <%= link_to new_user_path, class:"nav-link" do %>
+                    <%= link_to new_enterprise_path, class:"nav-link" do %>
                       <i class="far fa-circle nav-icon"></i>
                       <p>新規登録・取扱企業</p>
                     <% end %>

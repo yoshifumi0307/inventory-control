@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2021_02_19_064732) do
 
-  create_table "users", force: :cascade do |t|
+  create_table "enterprises", force: :cascade do |t|
     t.string "name"
     t.text "address"
     t.string "phone"
