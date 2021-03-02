@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :enterprises
+  resources :enterprises, :products
 end

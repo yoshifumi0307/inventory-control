@@ -1,0 +1,35 @@
+<section class="content">
+<%= form_with(model: product, local: true) do |form| %>
+  <% if product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+      <ul>
+        <% product.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="card-body">
+    <div class="form-group col-sm-6">
+      <%= form.label :取扱商品： %><span class="badge badge-danger">必須</span>
+      <%= form.text_field :product, class:"form-control", placeholder:"取扱商品名を入力してください" %>
+    </div>
+    <div class="form-group col-sm-6">
+      <%= form.label :商品区分： %>
+      <%= form.text_field :category, class:"form-control", placeholder:"商品区分を入力してください" %>
+    </div>
+    <div class="form-group col-sm-6">
+      <%= form.label :主要取引先： %>
+      <%= form.text_field :main_client, class:"form-control", placeholder:"主要取引先を入力してください" %>
+    </div>
+    <div class="form-group col-sm-6">
+      <%= form.label :メモ欄： %>
+      <%= form.text_field :memo, class:"form-control", placeholder:"メモ欄になります" %>
+    </div>
+  </div>
+  <div class="card-footer">
+    <%= form.submit "　保存　", class:"btn btn-primary" %>
+  </div>
+<% end %>
+</section>
