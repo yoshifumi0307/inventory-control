@@ -21,6 +21,10 @@ ActiveRecord::Schema.define(version: 2021_02_26_063446) do
   end
 
   create_table "products", charset: "utf8mb4", collation: "utf8mb4_bin", force: :cascade do |t|
+    t.string "product"
+    t.string "category"
+    t.string "main_client"
+    t.text "memo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

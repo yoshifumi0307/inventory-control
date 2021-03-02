@@ -1,5 +1,7 @@
 class Product < ApplicationRecord
-    validates :name, presence: true, length: {maximum: 100}
-    validates :address, length: {maximum: 255}
-    validates :phone, allow_blank: true, length: {maximum: 15}, numericality: true
+    validates :product, presence: true, length: {maximum: 100}
+    validates :category, presence: true, length: {maximum: 100}
+    validates :main_client, presence: true, length: {maximum: 100}
+    validates :memo, presence: true, length: {maximum:225}
 end
+
