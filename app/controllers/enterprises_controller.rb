@@ -1,5 +1,5 @@
 class EnterprisesController < ApplicationController
-  before_action :set_enterprise, only: %i[ show edit update destroy ]
+  before_action :set_enterprise, only: [:show, :edit, :update, :destroy]
 
   # GET /enterprises or /enterprises.json
   def index
@@ -7,8 +7,7 @@ class EnterprisesController < ApplicationController
   end
 
   # GET /enterprises/1 or /enterprises/1.json
-  def show
-  end
+  def show; end
 
   # GET /enterprises/new
   def new
@@ -16,8 +15,7 @@ class EnterprisesController < ApplicationController
   end
 
   # GET /enterprises/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /enterprises or /enterprises.json
   def create
@@ -25,7 +23,7 @@ class EnterprisesController < ApplicationController
 
     respond_to do |format|
       if @enterprise.save
-        format.html { redirect_to @enterprise, notice: "Enterprise was successfully created." }
+        format.html { redirect_to @enterprise, notice: 'Enterprise was successfully created.' }
         format.json { render :show, status: :created, location: @enterprise }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +36,7 @@ class EnterprisesController < ApplicationController
   def update
     respond_to do |format|
       if @enterprise.update(enterprise_params)
-        format.html { redirect_to @enterprise, notice: "Enterprise was successfully updated." }
+        format.html { redirect_to @enterprise, notice: 'Enterprise was successfully updated.' }
         format.json { render :show, status: :ok, location: @enterprise }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,12 +49,13 @@ class EnterprisesController < ApplicationController
   def destroy
     @enterprise.destroy
     respond_to do |format|
-      format.html { redirect_to enterprises_url, notice: "Enterprise was successfully destroyed." }
+      format.html { redirect_to enterprises_url, notice: 'Enterprise was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
+
     # Use callbacks to share common setup or constraints between actions.
     def set_enterprise
       @enterprise = Enterprise.find(params[:id])
@@ -64,6 +63,6 @@ class EnterprisesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def enterprise_params
-      params.require(:enterprise).permit(:name, :address, :phone )
+      params.require(:enterprise).permit(:name, :address, :phone)
     end
 end
