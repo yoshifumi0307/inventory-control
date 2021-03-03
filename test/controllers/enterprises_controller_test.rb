@@ -1,21 +1,21 @@
-require "test_helper"
+require 'test_helper'
 
 class EnterprisesControllerTest < ActionDispatch::IntegrationTest
   setup do
     @enterprise = enterprises(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get enterprises_url
     assert_response :success
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_enterprise_url
     assert_response :success
   end
 
-  test "should create enterprise" do
+  test 'should create enterprise' do
     assert_difference('Enterprise.count') do
       post enterprises_url, params: { enterprise: { address: @enterprise.address, name: @enterprise.name, phone: @enterprise.phone } }
     end
@@ -23,22 +23,22 @@ class EnterprisesControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to enterprise_url(Enterprise.last)
   end
 
-  test "should show enterprise" do
+  test 'should show enterprise' do
     get enterprise_url(@enterprise)
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get edit_enterprise_url(@enterprise)
     assert_response :success
   end
 
-  test "should update enterprise" do
+  test 'should update enterprise' do
     patch enterprise_url(@enterprise), params: { enterprise: { address: @enterprise.address, name: @enterprise.name, phone: @enterprise.phone } }
     assert_redirected_to enterprise_url(@enterprise)
   end
 
-  test "should destroy enterprise" do
+  test 'should destroy enterprise' do
     assert_difference('Enterprise.count', -1) do
       delete enterprise_url(@enterprise)
     end

@@ -1,7 +1,7 @@
-require "test_helper"
+require 'test_helper'
 
 class TestControllerTest < ActionDispatch::IntegrationTest
-  test "should get starter" do
+  test 'should get starter' do
     get test_starter_url
     assert_response :success
   end
