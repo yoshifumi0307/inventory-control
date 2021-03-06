@@ -25,4 +25,3 @@ production:
   # master_key: <%= ENV['RAILS_MASTER_KEY'] %>
   url: <%= ENV['DATABASE_URL'] %>
   <<: *default
-  database: inventory
