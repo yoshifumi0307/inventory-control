@@ -5,7 +5,7 @@ default: &default
   collation: utf8mb4_bin
   username: <%= ENV['DB_USERNAME'] || 'root' %>
   password: <%= ENV['DB_PASSWORD'] || 'password' %>
-  database: database_portfolio
+  database: inventory
   pool: <%= ENV['RAILS_MAX_THREADS'] || 5 %>
   timeout: 5000
 
@@ -18,8 +18,11 @@ test:
 #  database: db/test.sqlite3
 
 production:
-  <<: *default
+  # <<: *default
+  # url: <%= ENV['DATABASE_URL'] %>
+  # username: <%= ENV['DATABASE_USERNAME'] %>
+  # password: <%= ENV['DATABASE_PASSWORD'] %>
+  # master_key: <%= ENV['RAILS_MASTER_KEY'] %>
   url: <%= ENV['DATABASE_URL'] %>
-  username: <%= ENV['DATABASE_USERNAME'] %>
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  master_key: <%= ENV['RAILS_MASTER_KEY'] %>
+  <<: *default
+  database: inventory
