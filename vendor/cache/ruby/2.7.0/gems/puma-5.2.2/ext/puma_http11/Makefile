@@ -12,12 +12,12 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/include/ruby-2.7.0
+topdir = /Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/include/ruby-2.7.0
 hdrdir = $(topdir)
-arch_hdrdir = /Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/include/ruby-2.7.0/x86_64-darwin20
+arch_hdrdir = /Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/include/ruby-2.7.0/x86_64-darwin20
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2
+prefix = $(DESTDIR)/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -31,8 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20210305-29619-1mdptog
-sitelibdir = $(DESTDIR)./.gem.20210305-29619-1mdptog
+sitearchdir = $(DESTDIR)./.gem.20210308-52176-187xrs6
+sitelibdir = $(DESTDIR)./.gem.20210308-52176-187xrs6
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -87,10 +87,10 @@ CCDLFLAGS = -fno-common
 CFLAGS   = $(CCDLFLAGS) $(cflags)  -fno-common -pipe $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS = -DHAVE_OPENSSL_BIO_H -DHAVE_DTLS_METHOD -DHAVE_TLS_SERVER_METHOD -DHAVE_SSL_CTX_SET_MIN_PROTO_VERSION -DHAVE_X509_STORE_UP_REF -DHAVE_SSL_CTX_SET_ECDH_AUTO -I/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/openssl/include -I/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
+CPPFLAGS = -DHAVE_OPENSSL_BIO_H -DHAVE_DTLS_METHOD -DHAVE_TLS_SERVER_METHOD -DHAVE_SSL_CTX_SET_MIN_PROTO_VERSION -DHAVE_X509_STORE_UP_REF -DHAVE_SSL_CTX_SET_ECDH_AUTO -I/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/openssl/include -I/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
 CXXFLAGS = $(CCDLFLAGS) -g -O2 $(ARCH_FLAG)
-ldflags  = -L. -L/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/lib  -fstack-protector-strong -L/usr/local/lib
-dldflags = -L/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/lib  -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
+ldflags  = -L. -L/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/lib  -fstack-protector-strong -L/usr/local/lib
+dldflags = -L/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/lib  -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
@@ -125,8 +125,8 @@ TOUCH = exit >
 #### End of system configuration section. ####
 
 preload = 
-libpath = . $(libdir) /Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/openssl/lib
-LIBPATH =  -L. -L$(libdir) -L/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/openssl/lib
+libpath = . $(libdir) /Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/openssl/lib
+LIBPATH =  -L. -L$(libdir) -L/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/openssl/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log

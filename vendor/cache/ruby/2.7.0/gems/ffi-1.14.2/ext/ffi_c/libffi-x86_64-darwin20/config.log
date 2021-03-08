@@ -30,15 +30,23 @@ Kernel configured for up to 8 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1 2 3 4 5 6 7
 Primary memory available: 8.00 gigabytes
-Default processor set: 513 tasks, 3680 threads, 8 processors
-Load average: 14.36, Mach factor: 0.65
+Default processor set: 529 tasks, 3880 threads, 8 processors
+Load average: 23.18, Mach factor: 0.38
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/bin
+PATH: /Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/bin
 PATH: /Users/yoshifumi/.anyenv/envs/rbenv/libexec
 PATH: /Users/yoshifumi/.anyenv/envs/rbenv/plugins/ruby-build/bin
+PATH: /usr/local/opt/mysql/bin
+PATH: /usr/local/opt/mysql@5.6/bin
+PATH: /Users/yoshifumi/.nodenv/bin
+PATH: /Users/yoshifumi/.anyenv/envs/rbenv/shims
+PATH: /Users/yoshifumi/.anyenv/envs/rbenv/bin
+PATH: /Users/yoshifumi/.anyenv/envs/nodenv/shims
+PATH: /Users/yoshifumi/.anyenv/envs/nodenv/bin
+PATH: ~/.anyenv/bin
 PATH: /Users/yoshifumi/.nodenv/shims
 PATH: /Users/yoshifumi/.nodenv/bin
 PATH: /Users/yoshifumi/.anyenv/envs/nodenv/shims
@@ -809,7 +817,7 @@ configure:17485: checking for memfd_create
 configure:17485: clang -o conftest  -Wall -fexceptions   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_memfd_create", referenced from:
-      _main in conftest-53600f.o
+      _main in conftest-644c78.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:17485: $? = 1

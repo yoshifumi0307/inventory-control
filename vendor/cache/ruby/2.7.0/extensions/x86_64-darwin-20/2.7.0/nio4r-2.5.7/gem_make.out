@@ -1,5 +1,5 @@
 current directory: /Users/yoshifumi/project/inventory_control/vendor/cache/ruby/2.7.0/gems/nio4r-2.5.7/ext/nio4r
-/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/bin/ruby -I /Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20210305-29619-15euul2.rb extconf.rb
+/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/bin/ruby -I /Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/lib/ruby/2.7.0 -r ./siteconf20210308-52176-bwsfiy.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... no
 checking for linux/io_uring.h... no
@@ -92,7 +92,7 @@ compiling selector.c
 selector.c:301:26: warning: incompatible function pointer types passing 'VALUE (*)(VALUE *)' (aka 'unsigned long (*)(unsigned long *)') to parameter of type 'VALUE (*)(VALUE)' (aka 'unsigned long (*)(unsigned long)') [-Wincompatible-function-pointer-types]
         return rb_ensure(func, (VALUE)args, NIO_Selector_unlock, self);
                          ^~~~
-/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1990:24: note: passing argument to parameter here
+/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/include/ruby-2.7.0/ruby/ruby.h:1990:24: note: passing argument to parameter here
 VALUE rb_ensure(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE),VALUE);
                        ^
 1 warning generated.
@@ -100,4 +100,4 @@ linking shared-object nio4r_ext.bundle
 
 current directory: /Users/yoshifumi/project/inventory_control/vendor/cache/ruby/2.7.0/gems/nio4r-2.5.7/ext/nio4r
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20210305-29619-1q3miwz
+/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20210308-52176-iel2ys

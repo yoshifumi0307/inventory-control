@@ -1,5 +1,5 @@
 current directory: /Users/yoshifumi/project/inventory_control/vendor/cache/ruby/2.7.0/gems/ffi-1.14.2/ext/ffi_c
-/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/bin/ruby -I /Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20210305-29619-7fb3x1.rb extconf.rb
+/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/bin/ruby -I /Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/lib/ruby/2.7.0 -r ./siteconf20210308-52176-yfo6cz.rb extconf.rb
 checking for ffi_prep_closure_loc() in -lffi... no
 checking for ffi_prep_closure_loc() in -llibffi... no
 checking for ffi_prep_closure_loc() in -llibffi-8... no
@@ -123,4 +123,4 @@ compiling Types.c
 compiling Variadic.c
 compiling ffi.c
 linking shared-object ffi_c.bundle
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20210305-29619-u2hjxj
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20210308-52176-2ct8xd

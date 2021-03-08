@@ -1,5 +1,5 @@
 current directory: /Users/yoshifumi/project/inventory_control/vendor/cache/ruby/2.7.0/gems/msgpack-1.4.2/ext/msgpack
-/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/bin/ruby -I /Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20210305-29619-5upp9n.rb extconf.rb
+/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/bin/ruby -I /Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/lib/ruby/2.7.0 -r ./siteconf20210308-52176-yzamtm.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... yes
 checking for rb_str_replace() in ruby.h... yes
@@ -22,7 +22,7 @@ compiling buffer_class.c
 buffer_class.c:261:17: warning: incompatible pointer types passing 'VALUE (VALUE)' (aka 'unsigned long (unsigned long)') to parameter of type 'VALUE (*)(VALUE, VALUE)' (aka 'unsigned long (*)(unsigned long, unsigned long)') [-Wincompatible-pointer-types]
                 read_until_eof_error, (VALUE)(void*) args,
                 ^~~~~~~~~~~~~~~~~~~~
-/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1988:47: note: passing argument to parameter here
+/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/include/ruby-2.7.0/ruby/ruby.h:1988:47: note: passing argument to parameter here
 VALUE rb_rescue2(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE,...);
                                               ^
 1 warning generated.
@@ -41,7 +41,7 @@ unpacker_class.c:137:1: warning: function 'raise_unpacker_error' could be declar
 unpacker_class.c:316:17: warning: incompatible pointer types passing 'VALUE (VALUE)' (aka 'unsigned long (unsigned long)') to parameter of type 'VALUE (*)(VALUE, VALUE)' (aka 'unsigned long (*)(unsigned long, unsigned long)') [-Wincompatible-pointer-types]
                 Unpacker_rescue_EOFError, self,
                 ^~~~~~~~~~~~~~~~~~~~~~~~
-/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1988:47: note: passing argument to parameter here
+/Users/yoshifumi/.anyenv/envs/rbenv/versions/2.7.0/include/ruby-2.7.0/ruby/ruby.h:1988:47: note: passing argument to parameter here
 VALUE rb_rescue2(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE,...);
                                               ^
 unpacker_class.c:225:14: warning: unused function 'Unpacker_peek_next_type' [-Wunused-function]
@@ -53,4 +53,4 @@ linking shared-object msgpack/msgpack.bundle
 
 current directory: /Users/yoshifumi/project/inventory_control/vendor/cache/ruby/2.7.0/gems/msgpack-1.4.2/ext/msgpack
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20210305-29619-7zf93t/msgpack
+/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20210308-52176-13fluwq/msgpack
