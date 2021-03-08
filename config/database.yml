@@ -5,6 +5,7 @@ default: &default
   collation: utf8mb4_bin
   username: <%= ENV['DB_USERNAME'] || 'root' %>
   password: <%= ENV['DB_PASSWORD'] || 'password' %>
+  database: inventory
   pool: <%= ENV['RAILS_MAX_THREADS'] || 5 %>
   timeout: 5000
 development:
