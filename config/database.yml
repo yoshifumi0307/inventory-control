@@ -6,13 +6,13 @@ default: &default
   username: <%= ENV['DB_USERNAME'] || 'root' %>
   password: <%= ENV['DB_PASSWORD'] || 'password' %>
   pool: <%= ENV['RAILS_MAX_THREADS'] || 5 %>
-  database: inventory
   timeout: 5000
 
 development:
   <<: *default
   host: <%= ENV['DB_HOST'] || '127.0.0.1' %>
   port: <%= ENV['DB_PORT'] || 3306 %>
+  database: development
 
 test:
   <<: *default
@@ -22,4 +22,5 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['DB_URL'] %>
+  database: production
