@@ -7,6 +7,7 @@ default: &default
   password: <%= ENV['DB_PASSWORD'] || 'password' %>
   pool: <%= ENV['RAILS_MAX_THREADS'] || 5 %>
   timeout: 5000
+  socket: /var/lib/mysql/mysql.sock
 
 development:
   <<: *default
