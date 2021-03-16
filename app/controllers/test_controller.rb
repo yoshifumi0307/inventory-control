@@ -1,3 +1,4 @@
 class TestController < ApplicationController
-  def starter; end
+  def starter
+  end
 end
